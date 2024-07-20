@@ -12,8 +12,8 @@
       <h1>Shopping Lista</h1>
       <nav id="menu-std">
         <ul>
-          <li><a href="#">Spremi</a></li>
-          <li><a href="#">Ucitaj</a></li>
+          <li><a id="spremi" href="#">Spremi</a></li>
+          <li><a id="ucitaj" href="#">Ucitaj</a></li>
         </ul>
       </nav>
       <div id="icon" onclick="toggleMenuIcon()">
@@ -25,15 +25,15 @@
     <main>
       <nav id="menu-small">
         <ul>
-          <li><a href="#">Spremi</a></li>
-          <li><a href="#">Ucitaj</a></li>
+          <li><a id="spremiSm" href="#">Spremi</a></li>
+          <li><a id="ucitajSm" href="#">Ucitaj</a></li>
         </ul>
       </nav>
       <section id="forma">
         <form action="">
           <div id="form-inner-container">
             <label for="stinp">Stavka</label>
-            <input id="stinp" name="st" type="text" maxlength="15" />
+            <input id="stinp" name="st" type="text" maxlength="15" required />
             <label for="kolinp" id="label-kol">Količina</label>
             <input
               id="kolinp"
@@ -42,6 +42,7 @@
               min="1"
               max="999"
               value="0"
+              required
             />
           </div>
           <div id="form-button-container">
@@ -74,7 +75,7 @@
       <script src="script.js"></script>
     </main>
     <footer>
-      <p>&copy; Zorislav</p>
+      <p>&copy; Hrvoje</p>
     </footer>
   </body>
 </html>
